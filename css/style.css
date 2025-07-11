@@ -364,3 +364,46 @@ a:hover {
     background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%) !important;
   }
 }
+
+.custom-video-thumb {
+  background: plum;
+  border-radius: 1rem;
+  width: 100%;
+  aspect-ratio: 1/1;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.custom-video-thumb .video-play-icon {
+  font-size: 3rem;
+  color: white;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  z-index: 2;
+}
+.custom-video-thumb .video-title {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.15);
+  padding: 0.25rem 0;
+}
+@media (max-width: 767px) {
+  .custom-video-thumb {
+    min-height: 120px;
+    border-radius: 0.5rem;
+  }
+  .custom-video-thumb .video-title {
+    font-size: 0.95rem;
+  }
+}
